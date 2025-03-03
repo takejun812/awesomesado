@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
 import gsap from "gsap";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
-  const [imageSrc, setImageSrc] = useState("/assets/image/mv.png");
   useEffect(() => {
 		gsap.to("#mv", {
 			opacity: 0,
