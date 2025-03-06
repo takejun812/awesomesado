@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
-
 const inter = Inter({
 	subsets: ["latin"],
 	display: "swap",
@@ -15,10 +14,9 @@ const notoSansJp = Noto_Sans_JP({
 	variable: "--font-noto-sans",
 });
 
-
 export const metadata: Metadata = {
-  title: "佐渡で野外活動するなら | オーサム",
-  icons: [
+	title: "佐渡で野外活動するなら | オーサム",
+	icons: [
 		{
 			rel: "icon",
 			type: "image/png",
@@ -26,21 +24,19 @@ export const metadata: Metadata = {
 		},
 		{
 			rel: "apple-touch-icon",
-      url: "../../public/assets/icon/favicon.ico",
+			url: "../../public/assets/icon/favicon.ico",
 		},
 	],
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
+	return (
 		<html lang="ja" className={`${inter.variable} ${notoSansJp.variable}`}>
-      <body >
-        {children}
-      </body>
-    </html>
-  );
+			<body>{children}</body>
+		</html>
+	);
 }
