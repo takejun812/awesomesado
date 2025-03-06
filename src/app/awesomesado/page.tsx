@@ -32,9 +32,14 @@ export default function Home() {
 		});
 	}, []);
 	return (
-		<main className="bg-brand size-full">
+		<main className="bg-white text-black size-full">
 			<section className="h-[200vh]">
 				<div className="sticky h-screen top-0">
+					<p className="text-[16px] md:text-[30px] text-red-500 w-full absolute bottom-20 font-bold left-1/2 -translate-x-1/2 text-center z-20">
+						※申し訳ございません。現在鋭意制作中です。
+						<br />
+						もしばらくお待ちください。
+					</p>
 					<div className="h-screen  relative overflow-hidden">
 						<Image
 							id="mv"
@@ -114,13 +119,48 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<div className="max-w-[700px] mx-auto h-[500px] py-30">
-				<section className="">
+			<div className="w-screen mx-auto  py-30">
+				<section className="max-w-[700px] mx-auto">
 					<div className="">
 						<Image
-							src="/assets/image/title--about.png"
+							src="/assets/image/page-top-section__title-about.png"
 							alt="オーサムのメニュー"
-							className="w-full"
+							className="w-full md:w-[400px] mx-auto"
+							width={517}
+							height={313}
+						/>
+					</div>
+					<div className="">
+						<p className="">
+							大人一人、子ども５人前後のグループ行動を基本とし、普段なかなか体験できないような活動を通じ、子どもたちの「行動力」、「問題解決力」、
+							「協調性」、「主体性」などを育みます。
+						</p>
+						<Image
+							src="/assets/image/page-top-section__title-about.png"
+							alt="オーサムのメニュー"
+							className="w-full md:w-[400px] mx-auto"
+							width={517}
+							height={313}
+						/>
+					</div>
+				</section>
+				<section className="max-w-[700px] mx-auto">
+					<div className="">
+						<Image
+							src="/assets/image/page-top-section__title-schedule.png"
+							alt="オーサムのメニュー"
+							className="w-full md:w-[400px] mx-auto"
+							width={517}
+							height={313}
+						/>
+					</div>
+				</section>
+				<section className="max-w-[700px] mx-auto">
+					<div className="">
+						<Image
+							src="/assets/image/page-top-section__title-article.png"
+							alt="オーサムのメニュー"
+							className="w-full md:w-[400px] mx-auto"
 							width={517}
 							height={313}
 						/>

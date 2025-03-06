@@ -10,7 +10,8 @@ module.exports = {
 		extend: {
 			// You can extend the default theme here
 			colors: {
-				// Add custom colors if needed
+				brand: "#F6E7CC",
+				pink: "#DDC1CF",
 			},
 			fontFamily: {
 				// Add custom fonts if needed
