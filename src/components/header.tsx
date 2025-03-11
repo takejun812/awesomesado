@@ -1,11 +1,20 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
-			<div className="bg-white p-5 flex justify-between h-10">
-				<a href="" className="block"></a>
+			<div>
+				<a href="" className="block w-[100px]">
+        <Image
+								src="/assets/image/awesome__logo.png"
+								alt="オーサムのロゴ"
+								className="w-full"
+								width={517}
+								height={313}
+							/>
+        </a>
 				<div className="size-5">
 					<button
 						className="md:hidden focus:outline-none"

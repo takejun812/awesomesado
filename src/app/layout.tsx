@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+// import {Header} from "../components/header";
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -36,6 +37,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="ja" className={`${inter.variable} ${notoSansJp.variable}`}>
+			{/* <header className="bg-white flex justify-between h-15 fixed w-full z-400">
+			<Header />
+			</header> */}
 			<body>{children}</body>
 		</html>
 	);
