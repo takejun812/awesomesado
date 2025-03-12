@@ -2,7 +2,7 @@
 import Image from "next/image";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Accordion from "../../components/accordion";
 
 const accordionItems = [
@@ -134,12 +134,12 @@ export default function Home() {
 			opacity: 0,
 			duration: 3,
 			ease: "power4.out",
-			scrollTrigger: {
-				trigger: "#title-about",
-				start: "top bottom",
-				toggleActions: "play none none none",
-				markers: true,
-			},
+			// scrollTrigger: {
+			// 	trigger: "#title-about",
+			// 	start: "top bottom",
+			// 	toggleActions: "play none none none",
+			// 	markers: true,
+			// },
 		});
 	}, []);
 	// GSAPで矢印を上下にゆっくりと動かすアニメーション
