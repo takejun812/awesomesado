@@ -37,7 +37,6 @@ export default function Home() {
 			opacity: 1,
 			duration: 4,
 			delay: 3,
-			ease: "power2.out",
 		});
 
     gsap.to("#menu--schedule", {
@@ -45,7 +44,6 @@ export default function Home() {
 			opacity: 1,
 			duration: 4,
 			delay: 3.2,
-			ease: "power2.out",
 		});
 
     gsap.to("#menu--article", {
@@ -53,7 +51,6 @@ export default function Home() {
 			opacity: 1,
 			duration: 4,
 			delay: 3.4,
-			ease: "power2.out",
 		});
 
     gsap.to("#menu--question", {
@@ -61,7 +58,6 @@ export default function Home() {
 			opacity: 1,
 			duration: 4,
 			delay: 3.6,
-			ease: "power2.out",
 		});
 	}, []);
 
@@ -120,7 +116,7 @@ export default function Home() {
 									<a
 										href="#about"
 										id="menu--about"
-										className="absolute right-0 top-[8vh] min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
+										className="absolute right-0 top-0 min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
 									>
 										<Image
 											src="/assets/image/title--about.png"
@@ -133,7 +129,7 @@ export default function Home() {
 									<a
 										href="#schedule"
 										id="menu--schedule"
-										className="absolute left-0 top-[32vh] min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
+										className="absolute left-0 top-[24vh] min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
 									>
 										<Image
 											src="/assets/image/title--schedule.png"
@@ -146,7 +142,7 @@ export default function Home() {
 									<a
 										href="#article"
 										id="menu--article"
-										className="absolute right-0 top-[52vh] min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
+										className="absolute right-0 top-[44vh] min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
 									>
 										<Image
 											src="/assets/image/title--article--ready.png"
@@ -159,7 +155,7 @@ export default function Home() {
                   <a
 										href="#question"
 										id="menu--question"
-										className="absolute left-0 top-[72vh] min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
+										className="absolute left-0 top-[68vh] min-w-[280px] w-[70%] max-w-[400px] md:w-[400px] hover:opacity-70 opacity-0"
 									>
 										<Image
 											src="/assets/image/title--question.png"
@@ -171,7 +167,7 @@ export default function Home() {
 									</a>
 								</div>
 							</div>
-              <div className="absolute bottom-5 right-3">
+              <div className="absolute bottom-8 right-10">
               <div className="text-center">
         <div ref={arrowRef} className="mb-4 inline-block">
           <svg
@@ -195,7 +191,7 @@ export default function Home() {
       <p className="mt-10 text-[16px] md:text-[30px] text-red-500 w-full  font-bold text-center block border-yellow-300 border-10 py-4 max-w-[310px] mx-auto">
 						※一部コンテンツは鋭意制作中です。
 						<br />
-						5月ごろ正規リリース予定です
+						5月ごろ正規リリース予定です。
 					</p>
 			<div className="w-screen mx-auto  py-30">
       
@@ -209,21 +205,14 @@ export default function Home() {
 							height={313}
 						/>
 					</div>
-					<div className="">
-						<p className="">
-							大人一人、子ども５人前後のグループ行動を基本とし、普段なかなか体験できないような活動を通じ、子どもたちの「行動力」、「問題解決力」、
-							「協調性」、「主体性」などを育みます。
+					<div className="pt-4">
+						<p className="px-4">
+            私たちは、文部科学省や経済産業省が提唱する「社会を生き抜く力」を育むことを目的とした団体です。現代社会では、単なる知識だけでなく、「コミュニケーション能力」「自主性」「創造力」「問題解決能力」などが求められています。そこで、私たちは子どもたちがこれらの力を身につけ、将来にわたって活躍できるよう支援しています。<br /><br />
+            活動では、大人1人と子ども5人前後のグループ行動を基本とし、仲間と協力しながらさまざまな課題に挑戦します。これにより、子どもたちは「行動力」「問題解決力」「協調性」「主体性」などを学びます。また、グループでの活動を通じて、多様な価値観に触れ、自ら考え、行動する力を培います。
 						</p>
-						<Image
-							src="/assets/image/page-top-section__title-about.png"
-							alt="オーサムのメニュー"
-							className="w-full md:w-[400px] mx-auto max-w-[300px]"
-							width={517}
-							height={313}
-						/>
 					</div>
 				</section>
-				<section id="schedule" className="max-w-[700px] mx-auto">
+				<section id="schedule" className="max-w-[700px] mx-auto pt-30">
 					<div className="">
 						<Image
 							src="/assets/image/page-top-section__title-schedule.png"
@@ -233,8 +222,27 @@ export default function Home() {
 							height={313}
 						/>
 					</div>
+          <div className="border ">
+          <h3 className="pt-5 mx-10 text-lg font-bold">直近の活動予定</h3>
+          <dl className="flex gap-6 mx-10 pt-3">
+            <dt className="">3/23 野外炊飯 カレー編</dt>
+            <dd className="">1,300円</dd>
+          </dl>
+          <dl className="flex gap-6 mx-10 pt-3">
+            <dt className="">4/13 野外炊飯 バームクーヘン編</dt>
+            <dd className="">1,200円</dd>
+          </dl>
+          <dl className="flex gap-6 mx-10 pt-3">
+            <dt className="">4/20  野外炊飯 ハンバーガー編</dt>
+            <dd className="">1,400円</dd>
+          </dl>
+          </div>
+          <div className="mx-auto pt-5 w-full flex justify-center">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYJDL23ocV4JqWE6Adc40hWa-FaMaOVe8eCYvAsqW-PHwHDQ/viewform?usp=dialog" 
+          className="block border rounded-4xl text-center py-3 bg-black text-white w-[300px]">申し込みフォームはこちら
+</a></div>
 				</section>
-				<section id="article" className="max-w-[700px] mx-auto">
+				<section id="article" className="max-w-[700px] mx-auto pt-30">
 					<div className="">
 						<Image
 							src="/assets/image/page-top-section__title-article.png"
@@ -245,7 +253,7 @@ export default function Home() {
 						/>
 					</div>
 				</section>
-        <section id="question" className="max-w-[700px] mx-auto">
+        <section id="question" className="max-w-[700px] mx-auto pt-30">
 					<div className="">
 						<Image
 							src="/assets/image/page-top-section__title-question.png"
