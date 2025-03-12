@@ -7,14 +7,14 @@ export function Header() {
 		<>
 			<div>
 				<a href="" className="block w-[100px]">
-        <Image
-								src="/assets/image/awesome__logo.png"
-								alt="オーサムのロゴ"
-								className="w-full"
-								width={517}
-								height={313}
-							/>
-        </a>
+					<Image
+						src="/assets/image/awesome__logo.png"
+						alt="オーサムのロゴ"
+						className="w-full"
+						width={517}
+						height={313}
+					/>
+				</a>
 				<div className="size-5">
 					<button
 						className="md:hidden focus:outline-none"
